@@ -88,6 +88,8 @@ He want to live in a country that speaks **English**, has less than 10 million p
 **Question 6:** use **nested-if** statement to check your **age>18**
 than check your height **height > 5.10**.     
 If **both** true show any message(**I can sit in __ exam**)  in the console?
+
+**Question 7:** Create two variables **grade** and **passingYear**.Check if your **grade == "A"** and **passingYear < 2020** with the help of **ternary** operator(Not allowed to use any logical operator).If both condition *true* print on console **Qualify**. Otherwise **Fail** 
    
 ## Chapter 3 (Function)
 
@@ -112,6 +114,20 @@ person.name  =  `Mr ${person.name}`
 console.log(`Welcome ${person.name}`)
 }
 greet(person)
+```
+**Question 5:** Explain use of **return** statement inside the function?
+
+**Question 6:** What are **higher** order functions in JavaScript?
+
+**Question 7:**  Create **higher** order function named as **transformer** which take **string** and **firstUpperCaseWord()** as  an arguments. And return **string** with first word in **upperCase** 
+
+**Question 8:** Difference between **setTimeOut** and **setInterval** function. Also write **syntax** of both methods with specifying what are **required** and **optional** arguments in both function 
+
+**Question 9:** Guess the **Output** And Explain Why?
+```js
+let arrowFunction = (name ="Coders") => {`Welcome ${name}`};
+
+console.log(arrowFunction("Programmers"));
 ```
 
 ## Chapter 4 (Objects)
@@ -148,6 +164,25 @@ console.log(car.carColor);
 
 **Question 7:** Generate random  numbers between 0 and 10 using **trunc** method of **MATH** object 
 
+**Question 8:** Guess the **Output** and Explain Why?
+```js
+let arr = [1,2,3,4];
+arr.forEach(elem =>{
+	if(elem == 1){
+	continue;
+	}
+	console.log(elem);
+})
+```
+**Question 9:** Difference between **call** and **apply** method in term of implementation?
+
+**Question 10:** Guess the **Output** And Explain Why?
+```js
+let arr = [1,2,3,4];
+for(let elem in arr){
+console.log(elem);
+}
+```
 
 
 ## Chapter 5 (DOM)
@@ -167,9 +202,68 @@ console.log(car.carColor);
 2) contain at least one special character 
 3) contain at least one alphabet (a-z) character
 
+## Chapter 7(Array Methods)
+
+### Assignments
+
+**Question 1:** Difference between **slice** and **splice** method of array?
+
+**Question 2:** You have given an array of **5** elements(1-5). Your task is defined as below.
+
+1) You have to delete **2** elements starting from index  **2**.
+2) You have to add **3** new elements on that position of Your choice.
+3) Display the **2 deleted** elements in console.
 
 
+**Question 3:** What happens if we use **negative** number inside **slice** method?
+Example : arr.slice(-2); 
 
+**Question 4:** Write **three** different methods/approaches to get **last** element of the array?
+
+**Question 5:** One **key** difference between **map** and **filter** method of array?
+
+**Question 6** You have given an array of **scores** in which score of each student stored. Create a new array with the help of original **scores** array in which only those scores exist  **greater** than 75%
+
+```js
+let totalScore = 150;
+let scores = [55,76,35,77,88,97,120,136,140];
+```
+**Question 7:** You have given an array of numbers **nums**. You have to find **sum** of all array elements using **reduce** method?
+
+```js
+let nums = [2,3,5,7,8,4,9];
+```
+**Question 8:** You have given an array of numbers **nums**. You have to find the index of value **8** using **built-in** method of array?
+```js
+let nums = [2,3,5,6,8,6,4,8];
+```
+**Question 9:** Explain working difference between **find** and **findIndex** method?
+
+**Question 10:** Difference between **flat** and **flatMap** with details. Also Explain when to use which method?
+
+**Question 11:** By default how **sort** method sort the array.
+
+**Question 12:** Guess the **Output** and Explain Why?
+```js
+let arr = [1,2,3,4];
+let result = arr.splice(1,2).pop();
+console.log(result);
+```  
+**Question 13:** You have given an array of numbers **nums**. You have to check if all elements of the **array > 15** using **built-in** array method. 
+```js
+let nums = [16,17,18,28,22];
+```
+
+## Chapter 8 (Date and Time)
+
+### Assignments
+
+**Question 1:** How can we get current time in **millisecond**?
+
+**Question 2:** Explain difference between **getDate()** and **getDay()** method of current Date?
+
+ 
+ 
 
 
 
