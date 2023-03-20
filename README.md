@@ -80,7 +80,7 @@ He want to live in a country that speaks **English**, has less than 10 million p
  
 **Question 5:**  Guess the **Output** And Explain Why?
 ```js
-	for(let i = 0;i<10;i++{
+	for(let i = 0;i<10;i++){
 	console.log(i);
 }
 	console.log(i)
