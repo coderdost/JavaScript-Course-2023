@@ -9,14 +9,14 @@
 ```js
 let languages = "java javaScript python cSharp";
 let result = languages.lastIndexOf("S");
-console.log(result)
+	console.log(result)
 ```
 **Question 4:** Guess the **Output** and Explain Why?
 
 ```js
 let variable = "hello programmers";
 let result = Number(variable);
-console.log(result);
+	console.log(result);
 ```
 **Question 5:** Guess the **Output** and Explain Why?
 ```js
@@ -24,7 +24,7 @@ let num1 = 32;
 let num2 = "32";
 let result1 = num1 !== num2;
 let result2 = num1 != num2;
-console.log(result1,result2);
+	console.log(result1,result2);
 ```
 
 **Question 6:** Guess the **Output** and explain Why?
@@ -39,14 +39,14 @@ console.log(result);
 let num1 = 2;
 let num2 = 5;
 let result = num1**num2*2;
-console.log(result);
+	console.log(result);
 ```
 **Question 8:** Guess the **Output** and Explain Why?
 ```js
 let num1 = [1,2,4,5];
 let num2 = [6,5,8,0];
 let result = num1.concat(num2);
-console.log(result)
+	console.log(result)
 ```
 **Question 9:** Guess the **Output** and Explain Why?
 ```js
@@ -54,7 +54,7 @@ let a = 5;
 let b = 7;
 let c = 8;
 let result = a<b>c;
-console.log(result)
+	console.log(result)
 ```
 **Question 10:**  If your state split into **four** equal parts such that in each part there are **1/4**  number of people live. You have to find How many people would live in each part?
 
@@ -80,7 +80,7 @@ else{
 ```js
 let  i  =  0;
 for(i;i<5;i++){
-console.log(i);
+	console.log(i);
 }
 ```
 **Question 3:**  Write a simple **Program** in which You have to print first **10** number in **descending** order?
@@ -122,7 +122,7 @@ Example
 function addition(num1,num2){
 return num1 + num2;
 }
-console.log(addition()); //You are not allowed to modify this line any more
+	console.log(addition()); //You are not allowed to modify this line any more
 ```
 
 **Question 4:** Identify which **type** of value passed below into the function **greet()**
@@ -134,7 +134,7 @@ age:25
 }
 function  greet(person){
 person.name  =  `Mr ${person.name}`
-console.log(`Welcome ${person.name}`)
+	console.log(`Welcome ${person.name}`)
 }
 greet(person)
 ```
@@ -161,7 +161,7 @@ and so on.
 ```js
 let arrowFunction = (name ="Coders") => {`Welcome ${name}`};
 
-console.log(arrowFunction("Programmers"));
+	console.log(arrowFunction("Programmers"));
 ```
 
 ## Chapter 4 (Objects)
@@ -185,8 +185,8 @@ model:2021,
 company:"Toyota"
 }
 let carColor = "Blue";
-console.log(car[carColor]);
-console.log(car.carColor);
+	console.log(car[carColor]);
+	console.log(car.carColor);
 ```
 **Question 4:** Create a method **describeCar** inside *car* object in which you have to print like this in console using template literals
 
@@ -234,7 +234,7 @@ bookMethod("john",8754);
 ```js
 let arr = [1,2,3,4];
 for(let elem in arr){
-console.log(elem);
+	console.log(elem);
 }
 ```
 
@@ -254,8 +254,8 @@ console.log(elem);
 **JavaScript**
 ```js
 let  content  =  document.getElementById("content")
-console.log(content.innerHTML)
-console.log(content.innerText)
+	console.log(content.innerHTML)
+	console.log(content.innerText)
 ```
 
  
@@ -287,9 +287,9 @@ e.preventDefault();
 let  password  =  inputPassword.value;
 let  result  =  requiredPasswordPattern.test(password);
 if(result  ==  true){
-console.log("Your password validated successfully")
+	console.log("Your password validated successfully")
 }else{
-console.log("try again with new password")
+	console.log("try again with new password")
 }
 })
 ```
@@ -403,7 +403,7 @@ let nums = [16,17,18,28,22];
 let currentDate = new Date();
 let result1 = currentDate.getDay();
 let result2 = currentDate.getDate();
-console.log(result1,result2)
+	console.log(result1,result2)
 ```
 
  ## Chapter 9 (Local Storage)
@@ -435,11 +435,12 @@ class.
 **Question 3:**  Guess the **Output** And Explain Why?
 ```js
 function Person(name){
-this.name = name;
+	this.name = name;
 }
 let me = new Person("John");
-console.log(me.__proto__ == Person.prototype);
-console.log(me.__proto__.__proto__ == Object.prototype);
+
+	console.log(me.__proto__ == Person.prototype);
+	console.log(me.__proto__.__proto__ == Object.prototype);
 
 ```
 
@@ -465,18 +466,20 @@ class Car = {
 
 ```js
 function  Person(name,age){
-this.name  =  name;
-this.age  =  age;
-this.brainMethod  =  function(){
-console.log("This is brain method of Person")
+
+	this.name  =  name;
+	this.age  =  age;
+	this.brainMethod  =  function(){
+	console.log("This is brain method of Person")
 }
 }
-Person.heartMethod  =  function(){
-console.log("This is heart method of Person");
+	Person.heartMethod  =  function(){
+	console.log("This is heart method of Person");
 }
 let  me  =  new  Person("john",34);
-me.brainMethod();
-me.heartMethod();
+
+	me.brainMethod();
+	me.heartMethod();
 ```
 
 **Question 7:**  Create a new class **Animal** (which will be child class) inherited from **Person** class. In Addition  in **Animal** class Add some additional properties like **breedType** and  **animalFamily**.(catFamily, dogFamily)
@@ -489,9 +492,87 @@ class  Car {
 }
 }
 let  car  =  new  Car();
-console.log(Car.prototype.isPrototypeOf(Car));
-console.log(Car.prototype.isPrototypeOf(car));
+	console.log(Car.prototype.isPrototypeOf(Car));
+	console.log(Car.prototype.isPrototypeOf(car));
 ```
+## Chapter 11( Async & Await )
+
+### Assignments
+
+**Question 1:** Guess the **Output** And Explain Why?
+**Html Code**
+
+
+```html
+<!DOCTYPE  html>
+<html  lang="en">
+<head>
+<meta  charset="UTF-8">
+<meta  http-equiv="X-UA-Compatible"  content="IE=edge">
+<meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+<title>JavaScript-CoderDost</title>
+<style>
+</head>
+<body>
+<div  id="content">
+
+	<h2 id = "heading" ></h2>
+
+</div>
+<script  defer  src = "./script.js"></script>
+</script>
+</body>
+</html>
+```
+**JS Code**
+
+```js
+async  function greeting() {  
+let myPromise = new Promise(function(resolve) {  
+setTimeout(function() {resolve("I love Programming !!");}, 2000);  
+});  
+document.getElementById("heading").innerHTML = await myPromise;  
+}  
+greeting();
+```
+
+**Question 2:** Find the **Logical Error** in below code. And How can we solve them with **callback** function approach?
+
+```js
+
+const movies = [
+        { title: `Movie 1`},
+        { title: `Movie 2` }
+    ]
+
+function getMovies(){
+    setTimeout(() => {
+        movies.forEach((movie, index) => {
+            console.log(movie.title)
+        })
+    }, 1000);
+}
+
+function createMovies(movie){
+    setTimeout(() => {
+        movies.push(movie)
+    }, 2000);
+}
+
+getMovies();
+
+
+createMovies({ title: `Movie 3`} )
+```
+
+**Question 3:** What are the **three** possible State of any promise?
+
+**Question 4:** Solve **Question 2** again But this time with the help of **promise**  
+
+**Question 5:** Now re-factor **Question 2** with the help of **async-await** keyword?
+
+**Question 6:** Status code starting with **300** represent which type of message/error?
+ 
 
 ## Chapter 12 (Modern Operators)
 
@@ -502,7 +583,7 @@ console.log(Car.prototype.isPrototypeOf(car));
 ```js
 let arr = [3,4,5,7,98,0];
 let [a,b,,c] = arr;
-console.log(a,b,c);
+	console.log(a,b,c);
 ```
 
 **Question 2:** Guess the **Output** And Explain Why?
@@ -521,7 +602,7 @@ weight:70
 }
 
 let {name:objName,age} = obj;
-console.log(name,age);
+	console.log(name,age);
 ```
 
 **Question 4:** You have given an array of **nums**.Create **shallow** copy of that array  and store them in another **variable**
@@ -549,7 +630,7 @@ console.log(result);
 **Question 7:** You have given an object as below. You have to check  wheather **physics** is the subject of that student or not, if true find the **score** of **physics** subject using **optional chaining**
 
 ```js
-let  student  = {
+let  student = {
 Math:{
 score:75,
 },
@@ -563,12 +644,19 @@ score:85,
 ```js
 let nums = [2,3,4,5,6];
 for(let key of nums) {
-console.log(key)
+	console.log(key)
 }
 ```
 
-
+## Chapter 13 (Modern Tooling)
  
+### Assignments
+
+**Question 1:** You have given scenario. You are in **script.js** And in same directory there is another file **products.js**. In **products.js** there are two methods called **createProduct** and **deleteProduct**
+
+write an **import** and **export** statement properly in order to import these two methods from **products.js** file into the **script.js**
 
 
+**Question 2**  Now **export** only one method **createProduct** using **default** export statement?
 
+**Question 3:** In **importing** statement how can we **customize**/**change** the name of **function** we are importing?
