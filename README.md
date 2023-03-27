@@ -577,6 +577,111 @@ let  car  =  new  Car();
 	console.log(Car.prototype.isPrototypeOf(Car));
 	console.log(Car.prototype.isPrototypeOf(car));
 ```
+### More Practice Questions (OOP)
+**Question 1:** Guess the **Output** and Explain Why?
+```js
+function  carObject(name, model) {
+let  car  =  Object.create(constructorObject);
+car.name  =  name;
+car.model  =  model;
+this.engineMethod  =  function(){
+console.log("This is engine method of car")
+}
+return  car;
+}
+let  constructorObject  = {
+speak:  function(){
+return  "This is my car"
+}
+}
+let  myCar  =  carObject("Audi", 2023);
+console.log(myCar.__proto__);
+```
+
+**Question 2:** You have given an example of  **OOP**  Code. Your task is to explain the use of **super** keyword in **Dogs** class.
+And You have to **refactor** the code again after removing **super** keyword from the **Dogs** class(You have remove those lines/statements which are not **necessary** after **removing** super **keyword**) 
+
+```js
+class  Animals {
+constructor(name, age) {
+this.name  =  name;
+this.age  =  age;
+}
+sing() {
+return  `${this.name} can sing`;
+}
+dance() {
+return  `${this.name} can dance`;
+}
+}
+class  Dogs  extends  Animals {
+constructor(name, age, whiskerColor) {
+		super(name, age);
+this.whiskerColor  =  whiskerColor;
+}
+whiskers() {
+return  `I have ${this.whiskerColor} whiskers`;
+}
+}
+let  newDog  =  new  Dogs("Clara", 33, "indigo");
+console.log(newDog)
+```
+
+**Question 3:** What are the advantages of using **getter** and **setter** method in OOP?
+
+**Question 4:**  You have OOP code below. And there is **single** error in this code? Your task is to **remove that error**.
+**Important Note**: To solve this error You need to know about **method chaining** concept.
+```js
+class Car {  
+constructor(id){  
+this.id = id;  
+}  
+setMake(make) {  
+this.make = make;  
+}  
+setModel(model) {  
+this.model = model  
+}  
+setFuelType(fuelType) {  
+this.fuelType = fuelType;  
+}   
+getCarInfo() {  
+return {  
+"id" : this.id,  
+"make" : this.make,  
+"model" : this.model,  
+"fuelType" : this.fuelType  
+};
+}}
+
+
+console.log(  
+new Car(233)  
+.setMake("Honda")  
+.setModel("Civic")  
+.setFuelType("Petrol")  
+.getCarInfo()  
+);
+```
+**Question 5:** What is difference between   __ proto __ and prototype property of Object? Explain with **Example**?
+
+
+**Question 6:** create class of **Person** with properties name, age.
+Your main task is to add **static** method in that class of your choice ( e.g  brainMethod)
+
+```js
+class Person {
+	constructor(name,age){
+	this.name = name;
+	this.age = age;
+	}
+}
+
+let me = new Person("abhishek",25);
+console.log(me)
+	
+``` 
+
 ## Chapter 11( Async & Await )
 
 ### Assignments
