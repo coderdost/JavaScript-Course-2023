@@ -164,6 +164,21 @@ let arrowFunction = (name ="Coders") => {`Welcome ${name}`};
 	console.log(arrowFunction("Programmers"));
 ```
 
+**Question 8:** Create a JavaScript **Function** to find the area of a triangle where lengths of the three of its sides are 5, 6, 7
+
+```js 
+input : area_of_triangle(5,6,7)
+output : 14.69
+```
+**Question 9:** Create a JavaScript **Function** to capitalize the first letter of each word of a given string.
+```js
+
+input : capitalize("we are the champions") 
+output : "We Are The Champions"
+
+
+```
+
 ## Chapter 4 (Objects)
 
 ### Assignments
@@ -237,6 +252,14 @@ for(let elem in arr){
 	console.log(elem);
 }
 ```
+
+**Question 9:** You have to create a  **Shopping_Cart**  array with following features :
+
+-   **addItem(itemName)**  : this function should add string itemName to cart
+    
+-   **removeItem(itemName)**: this function should remove any item which matches itemName.  _Hint : search for index of itemName and then remove it_
+    
+-   **cartSize()**  : returns size of cart in terms of number of cart Items.
 
 
 ## Chapter 5 (DOM)
@@ -387,10 +410,69 @@ let arr = [1,2,3,4];
 let result = arr.splice(1,2).pop();
 console.log(result);
 ```  
-**Question 13:** You have given an array of numbers **nums**. You have to check if all elements of the **array > 15** using **built-in** array method. 
+**Question 13:** You have `given an array of numbers **nums**. You have to check if all elements of the **array > 15** using **built-in** array method. 
 ```js
 let nums = [16,17,18,28,22];
 ```
+
+### More Practice Questions (Arrays)
+
+**Question 1:**  Guess the **Output** And explain Why?
+
+```js
+let  strArray  = [1,2,3,4,5];
+let  result  =  strArray.reverse();
+console.log(result  ==  strArray);
+```
+**Question 2:**  You have **given** two **arrays** below as an example. Your task is to **combine** them into one By using array method
+```js
+input  
+let arr1 = [1,2,3,4,5];
+let arr2 = [6,7,8,9,10];
+ouput
+[6,7,8,9,10,1,2,3,4,5]
+```
+**Question 3:** You have given an array of **letters** below. Convert that array into string of letters **Without Space**
+
+```js
+input 
+let  arr  = ['a','b','h','i','s','h','e','k'];
+output
+'abhishek'
+```
+
+**Question 4:**   Guess the **Output** and explain why?
+```js
+let  arr  = [11,62,1,27,8,5];  
+let  sorted  =  arr.sort();
+console.log(sorted)
+```
+
+**Question 5:**  Create a function 'calcAverageHumanAge', which accepts an arrays of dog's ages ('ages'), and does the following thing in order:
+ 1. Calculate the dog age in human years using the following formula: if the dog is <= 2 years old, humanAge = 2 * dogAge. If the dog is > 2 years old, humanAge = 16 + dogAge 
+```js
+Test data
+
+let arr = [12,2,5,12,8,13,9];
+```
+
+**Question 6:** Guess the **Output** and Explain Why?
+
+```js
+let  arr  = [1,2,3,4,5,6,7,8]
+let  elem  =  arr.at(-1);
+console.log(elem);
+```
+
+**Question 7:**  Guess the **Output** and Explain why?
+```js
+let  arr  = [1,2,3,4,5,6,7,8]
+let  result  =  arr.slice(2,5).splice(0,2,21).pop();
+console.log(result,arr)
+```
+
+
+
 
 ## Chapter 8 (Date and Time)
 
@@ -648,6 +730,81 @@ for(let key of nums) {
 }
 ```
 
+### More Practice Questions
+
+**Question 1:** Guess the **Output** and  Explain Why?
+```js
+let  arr  = [1,2,3,4,5];
+let  arr1  = [...arr];
+arr1[2] =  10; 
+console.log(arr,arr1)
+```
+**Question 2:** You have given a list of variable names written in underscore. You have to write a program to convert them into camel casing format
+
+```js
+					List of variable names
+					
+Input
+user_name
+last_name
+date_of_birth
+user_password
+
+Output
+userName
+lastName
+dateOfBirth
+userPassword
+```
+**Question 3:** Guess the **Output** and Explain why?
+
+```js
+function  fun(a,b,...c){
+console.log(`${a}  ${b}`);
+console.log(c);
+console.log(c[0]);
+console.log(c.length);
+console.log(c.indexOf('google'));
+}
+fun('apple','sumsung','amazon','google','facebook')
+```
+**Question 4:**  Guess the **Output** and Explain Why?
+```js
+const fruits = { apple: 8, orange: 7, pear: 5 };
+const entries = Object.entries(fruits);
+for (const [fruit, count] of entries) {
+  console.log(`There are ${count} ${fruit}s`);
+}
+```
+
+**Question 5:** Write a program in which you have to set **Default** value  in case of false input value using **Logical Assignment** Operator?
+
+**Question 6:** Guess the **Output** and Explain Why?
+```js
+let  arr  =  new  Set([1,2,3,1,2,1,3,4,6,7,5]);
+let  length  =  arr.size;
+console.log(arr,length);
+```
+
+**Question 7:** You have given **Set** below. Your task is to convert that **Set** into an **array**?
+
+```js
+input
+let set = new Set[1,2,3,2,1,3,4,12,2];
+output
+let arr = "Do something here to convert....";
+```
+
+**Question 8:**  Guess the **Output** and Explain Why?
+**Note** :  **Change** values of variable to examine the result.
+```js
+let  number  =  40;
+let  age  =  18;
+let  result  =  number  >  50  ?  age  >  19  ?  'pass':'ageIssue'  :  "numberIssue" ;
+console.log(result);
+```
+
+ 
 ## Chapter 13 (Modern Tooling)
  
 ### Assignments
@@ -660,3 +817,9 @@ write an **import** and **export** statement properly in order to import these t
 **Question 2**  Now **export** only one method **createProduct** using **default** export statement?
 
 **Question 3:** In **importing** statement how can we **customize**/**change** the name of **function** we are importing?
+
+```js
+Example Actuall function name = 'Addition'
+We want to import as 'Add'
+How can can we do this?
+```
