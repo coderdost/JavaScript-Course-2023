@@ -1,6 +1,7 @@
 # JavaScript Full Course 2023
 
 [JavaScript Video](https://youtu.be/lGmRnu--iU8)
+
 [Course Notes Slide PDF](slides.pdf)
 
 ### Note: More questions to be updated in 24 Hours.
