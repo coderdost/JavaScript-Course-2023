@@ -4,6 +4,9 @@
 
 - [Course Notes Slide PDF](slides.pdf)
 
+- [Advanced JavaScript Video](https://www.youtube.com/watch?v=gUUCmRJjVvo)
+- [Advanced JavaScript Notes](https://coderdost.github.io/)
+
 ### Note: More questions to be updated in 24 Hours.
 
 ## Chapter 1 (Data Types)
