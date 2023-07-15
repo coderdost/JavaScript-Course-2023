@@ -372,9 +372,7 @@ let airplane = {
   ratings: 4.9,
 
   book(passenger, flightNum) {
-    console.log(
-      `${passenger} Booked flight in ${this.flightName} with flight Number ${this.atacode}${flightNum}`
-    );
+    console.log(`${passenger} Booked flight in ${this.flightName} with flight Number ${this.atacode}${flightNum}`);
   },
 };
 
@@ -447,12 +445,7 @@ _[From video lecture 6.2]_
 
 ```html
 <form action="" class="testForm">
-  <input
-    type="password"
-    name=""
-    class="inputPass"
-    placeholder="Enter Password"
-  />
+  <input type="password" name="" class="inputPass" placeholder="Enter Password" />
 
   <input type="submit" value="Check Password" />
 </form>
@@ -1161,13 +1154,9 @@ console.log(name, age);
 _[From video lecture 12.3]_
 
 ```js
+let nums = [5, 7, 4, 9, 2, 8];
 
-let  nums  = [5,7,4,9,2,8];
-
-
-
-let  newNums  =  "store Shallow copy of nums inside newNums variable")
-
+let newNums = 'store Shallow copy of nums inside newNums variable';
 ```
 
 **12.5:** You have given an array as below . Create a function which accept **multiple** elements as an argument and return last **4** element of the array
@@ -1322,6 +1311,7 @@ let set = new Set[(1, 2, 3, 2, 1, 3, 4, 12, 2)]();
 output;
 
 let arr = 'Do something here to convert....';
+console.log(arr);
 ```
 
 **Question 8:** Guess the **Output** and Explain Why?
