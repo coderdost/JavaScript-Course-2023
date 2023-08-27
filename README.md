@@ -179,9 +179,9 @@ _[From video lecture 2.9]_
 
 **3.2:** Create a **function expression** which does the exact same thing as defined in **Question 1**
 
-**3.3:** Create function **addition** which takes two numbers as an argument And return the result of **sum of two numbers**
+**3.3:** Create function **addition** which takes two numbers as an parameters And return the result of **sum of two numbers**
 
-**Important Note**: In the function call you are **not** passing any **parameter**. You can modify function to achieve this.
+**Important Note**: In the function call you are **not** passing any **arguments**. You can modify function to achieve this.
 
 _[From video lecture 3.2]_
 
