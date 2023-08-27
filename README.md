@@ -255,7 +255,7 @@ _[From video lecture 3.4]_
 
 ```js
 let arrowFunction = (name = 'Coders') => {
-  `Welcome ${name}`;
+ return `Welcome ${name}`;
 };
 
 console.log(arrowFunction('Programmers'));
