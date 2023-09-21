@@ -10,6 +10,7 @@
 ### Note: More questions to be updated in 24 Hours.
 
 ## Chapter 1 (Data Types)
+can be used
 
 ### Assignments
 
